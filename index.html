@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Topology-aware Multi-task Learning Framework for Civil Case Judgment Prediction">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TML</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+  
+
+<head>
+    <meta charset="UTF-8">
+    <title>adaptive image</title>
+    <style>
+        .responsive-image {
+            width: 50%; 
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Topology-aware Multi-task Learning Framework for Civil Case Judgment Prediction</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://yuquanle.github.io/">Yuquan Le</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=drWH-BYAAAAJ&hl=zh-CN&oi=ao">Sheng Xiao</a><sup>1&#9993;</sup>,</span>
+            <span class="author-block">
+              <a href="https://csee.hnu.edu.cn/people/xiaozheng">Zheng Xiao</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=mSpHqSUAAAAJ&hl=zh-CN&oi=ao">Kenli Li</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Hunan University, China    </span>
+          </div>
+        
+        </span>
+           <span class="author-block">
+           <h1 class="title is-4"><font color="#B03A2E"><b>ESWA 2024</b></font></h1>
+        </span>
+          
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://www.sciencedirect.com/science/article/pii/S0957417423026052"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://yuquanle.github.io/tml/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/LiliizZ/CPEE"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+            </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="subtitle has-text-centered">
+    <div class="hero-body">
+      <img src='static/images/teaserFig.png' width="1024" height="880",id="teaser-1">
+      <h2 class="subtitle has-text-centered">
+<!--        <p>-->
+<!--          <b>Concept diagrams</b> of generated long caption, image-text retrival, semantic segmentation and image understanding in MLLM.-->
+<!--        </p>-->
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          The civil case judgment prediction (CCJP) task involves automatically determining whether the plea of a plaintiff should be supported by analyzing the given civil case materials. However, most existing studies usually rely on inadequate legal essential elements (i.e., fact descriptions and pleas), and are specifically designed for single-cause scenarios. Consequently, these methods struggle to generalize effectively to real courts, where civil cases involve more complicated legal elements and numerous causes. To resolve the above limitations, we present a novel Topology-aware Multi-task Learning framework, called TML. Concretely, TML adopts the transformer-family pre-trained language models (PLMs) as the backbone to capture the finegrained semantic interactions among various legal elements. To exploit the structural information of the case, we collocate distinct special tokens for each legal element, and then extract the features of the case from different perspectives. Furthermore, to address multiple-cause scenarios, TML incorporates a multi-task learning paradigm to simultaneously predict multiple civil judicial subtasks (i.e., civil causes, civil law articles and final judgment of pleas). To utilize topological dependencies among subtasks, three parameter-free retrievers are integrated to establish inter-task connections. Extensive experiments are conducted on a real-world dataset, and the experimental results show the effectiveness of our proposed method.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Abstract. -->
+</section>
+
+<section class="section pipeline-section">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Model</h2>
+        <img src="static/images/TML_model.png" width="960" height="660">
+    </div>
+  </div>
+</section>
+<section class="section experiment-section">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Experiment</h2>
+        <img src="static/images/experiment.png" width="960" height="660">      
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>  @article{le2024topology,
+  title={Topology-aware multi-task learning framework for civil case judgment prediction},
+  author={Le, Yuquan and Xiao, Sheng and Xiao, Zheng and Li, Kenli},
+  journal={Expert Systems with Applications},
+  volume={238},
+  pages={122103},
+  year={2024},
+  publisher={Elsevier}
+}
+    </code></pre>
+  </div>
+</section>
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
