@@ -1,6 +1,6 @@
-# TML Homepage
+# R<sup>2</sup> Homepage
 
-This is the repository that contains source code for the [TML](https://github.com/yipoh/AesExpert).
+This is the repository that contains source code for the [R<sup>2</sup>](https://yuquanle.github.io/RR-homepage/).
 
 
 # Website License
