@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Topology-aware Multi-task Learning Framework for Civil Case Judgment Prediction">
+        content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TML</title>
@@ -63,14 +63,17 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">Topology-aware Multi-task Learning Framework for Civil Case Judgment Prediction</h1>
+          <h1 class="title is-2 publication-title">R<sup>2</sup>: A Novel Recall & Ranking Framework for Legal Judgment Prediction</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://yuquanle.github.io/">Yuquan Le</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=drWH-BYAAAAJ&hl=zh-CN&oi=ao">Sheng Xiao</a><sup>1&#9993;</sup>,</span>
+              <a href="https://csee.hnu.edu.cn/people/quanzhe">Zhe Quan</a><sup>1&#9993;</sup>,</span>
             <span class="author-block">
-              <a href="https://csee.hnu.edu.cn/people/xiaozheng">Zheng Xiao</a><sup>1</sup>,
+              <a href="https://jiaweiwang-ai.github.io/">Jiawei Wang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://csee.hnu.edu.cn/people/caoda">Da Cao</a><sup>1</sup>,
             </span>
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=mSpHqSUAAAAJ&hl=zh-CN&oi=ao">Kenli Li</a><sup>1</sup>,
@@ -83,14 +86,14 @@
         
         </span>
            <span class="author-block">
-           <h1 class="title is-4"><font color="#B03A2E"><b>ESWA 2024</b></font></h1>
+           <h1 class="title is-4"><font color="#B03A2E"><b>TALSP 2024</b></font></h1>
         </span>
           
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://www.sciencedirect.com/science/article/pii/S0957417423026052"
+                <a href="https://ieeexplore.ieee.org/document/10439618"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -100,7 +103,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://yuquanle.github.io/tml/"
+                <a href="https://yuquanle.github.io/RR/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -110,7 +113,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://github.com/LiliizZ/CPEE"
+                <a href="https://cail.oss-cn-qingdao.aliyuncs.com/CAIL2018_ALL_DATA.zip"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
@@ -147,9 +150,11 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-          The civil case judgment prediction (CCJP) task involves automatically determining whether the plea of a plaintiff should be supported by analyzing the given civil case materials. However, most existing studies usually rely on inadequate legal essential elements (i.e., fact descriptions and pleas), and are specifically designed for single-cause scenarios. Consequently, these methods struggle to generalize effectively to real courts, where civil cases involve more complicated legal elements and numerous causes. To resolve the above limitations, we present a novel Topology-aware Multi-task Learning framework, called TML. Concretely, TML adopts the transformer-family pre-trained language models (PLMs) as the backbone to capture the finegrained semantic interactions among various legal elements. To exploit the structural information of the case, we collocate distinct special tokens for each legal element, and then extract the features of the case from different perspectives. Furthermore, to address multiple-cause scenarios, TML incorporates a multi-task learning paradigm to simultaneously predict multiple civil judicial subtasks (i.e., civil causes, civil law articles and final judgment of pleas). To utilize topological dependencies among subtasks, three parameter-free retrievers are integrated to establish inter-task connections. Extensive experiments are conducted on a real-world dataset, and the experimental results show the effectiveness of our proposed method.
-          </p>
+          <p> The legal judgment prediction (LJP) task is to automatically decide appropriate law articles, charges, and term of penalty for giving the fact description of a law case. It considerably influences many real legal applications and has thus attracted the attention of legal practitioners and AI researchers in recent years. In real scenarios, many confusing charges are encountered, makes LJP challenging. Intuitively, for a controversial legal case,
+legal practitioners usually first obtain various possible judgment results as candidates based on the fact description of the case; then these candidates generally need to be carefully considered based on the facts and the rationality of the candidates. Inspired by this observation, this paper presents a novel Recall & Ranking framework, dubbed as R2, which attempts to formalize LJP as a two-stage problem. The recall stage is designed to collect high-likelihood judgment results for a given case; these results are regarded as candidates for the ranking stage. The ranking
+stage introduces a verification technique to learn the relationships between the fact description and the candidates. It treats the partially correct candidates as semi-negative samples, and thus has a certain ability to distinguish confusing candidates. Moreover, we devise a comprehensive judgment strategy to refine the final judgment results by comprehensively considering the rationality of multiple probable candidates. We carry out numerous experiments on two widely used benchmark datasets. The experimental results demonstrate our proposed approach’s effectiveness compared to the other competitive baselines.
+            
+                  </p>
         </div>
       </div>
     </div>
@@ -160,8 +165,8 @@
 <section class="section pipeline-section">
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-      <h2 class="title is-3">Model</h2>
-        <img src="static/images/TML_model.png" width="960" height="660">
+      <h2 class="title is-3">Pipeline</h2>
+        <img src="static/images/pipeline.png" width="960" height="660">
     </div>
   </div>
 </section>
@@ -177,14 +182,14 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>  @article{le2024topology,
-  title={Topology-aware multi-task learning framework for civil case judgment prediction},
-  author={Le, Yuquan and Xiao, Sheng and Xiao, Zheng and Li, Kenli},
-  journal={Expert Systems with Applications},
-  volume={238},
-  pages={122103},
+    <pre><code>  @article{le2024boldsymbol,
+  title={$$\backslash$boldsymbol $\{$R$\}$\^{}$\{$2$\}$ $: A Novel Recall \& Ranking Framework for Legal Judgment Prediction},
+  author={Le, Yuquan and Quan, Zhe and Wang, Jiawei and Cao, Da and Li, Kenli},
+  journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+  volume={32},
+  pages={1609--1622},
   year={2024},
-  publisher={Elsevier}
+  publisher={IEEE}
 }
     </code></pre>
   </div>
